@@ -76,7 +76,7 @@ function Range:OnInitialize()
 	self:SetEnabledState(Quartz3:GetModuleEnabled(MODNAME))
 	Quartz3:RegisterModuleOptions(MODNAME, getOptions, L["Range"])
 
-	f = CreateFrame("Frame", nil, UIParent)
+	f = CreateFrame("Frame", nil, UIParent, "BackdropTemplate")
 end
 
 function Range:OnEnable()
